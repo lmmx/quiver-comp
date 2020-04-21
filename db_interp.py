@@ -31,8 +31,7 @@ def draw_plot(prune_quiver_rate=4):
     plt.plot(v1_i_x, v1_i_y, linestyle="--", color=c1)
     plt.quiver(q1x, q1y, q1u, q1v, scale_units='xy', angles='xy', scale=1.5, color=c1)
     plt.plot(v2_i_x, v2_i_y, linestyle="--", color=c2)
-    plt.quiver(v2_i_x[:-1], v2_i_y[:-1], v2_i_x[1:]-v2_i_x[:-1], v2_i_y[1:]-v2_i_y[:-1],
-               scale_units='xy', angles='xy', scale=1.5, color=c2)
+    plt.quiver(q2x, q2y, q2u, q2v, scale_units='xy', angles='xy', scale=1.5, color=c2)
     #plt.grid(which="both", linestyle="--")
     return
 
