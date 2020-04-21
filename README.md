@@ -13,4 +13,11 @@ Comparing discrete paths
   ones that loop back on themselves to momentarily head in the same direction as the
   alternate path (though the alternate paths are overall in opposite directions)
 
+- Updated line/quiver plot in `doubleback_quiver.py` sketches it in more detail:
+
 ![](img/doubleback_plot.png)
+
+- However the data should be in the form of a continuous path, so to better represent the data
+  `db_interp.py` interpolates the vectors and plots with arrows rather than quivers
+
+![](img/db_path_plot.png)

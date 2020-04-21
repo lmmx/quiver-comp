@@ -7,25 +7,25 @@ from pathlib import Path
 # Green, above
 v1 = np.array(
     [
-        (9.0, 4.5),
+        (9.0, 4.6),
         (1.0, 3.0),
         (4.2, 3.0),
-        (5.5, 2.5),
+        (5.6, 2.6),
         (3.0, 0.8),
-        (4.5, 0.8),
+        (4.6, 0.8),
     ]
 )
 
 # Purple, below (doubling back)
 v2 = np.array(
     [
-        (8.0, 0.5),
-        (2.0, 0.5),
-        (4.7, 2.3),
-        (4.1, 2.7),
-        (3.7, 2.6),
-        (4.1, 2.2),
-        (0.0, 2.3),
+        (8.0, 0.6),
+        (2.0, 0.6),
+        (4.8, 2.4),
+        (4.2, 2.8),
+        (3.8, 2.6),
+        (4.2, 2.2),
+        (0.0, 2.2),
         (0.8, 3.4),
     ]
 )
@@ -66,13 +66,6 @@ def draw_plot():
 def show_plot():
     draw_plot()
     plt.show()
-    return
-
-
-def save_plot():
-    file = Path(__file__).parent / "img" / "quiver_plot.png"
-    draw_plot()
-    plt.savefig(file, bbox_inches="tight")
     return
 
 
